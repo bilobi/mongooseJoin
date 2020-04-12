@@ -9,10 +9,13 @@ router.put('/category',(rq,res)=>{
     categoryService.putCategory(rq,res);
 })
 
-router.get('/category',(rq,res)=>{
+router.get('/categories',(rq,res)=>{
     categoryService.getCategories(rq,res);
 })
-router.get('/variant',(rq,res)=>{
+router.get('/products',(rq,res)=>{
+    categoryService.getProducts(rq,res);
+})
+router.get('/variants',(rq,res)=>{
     categoryService.getVariants(rq,res);
 })
 
